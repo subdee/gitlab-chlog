@@ -1,0 +1,16 @@
+{
+    "name": "subdee/gitlab-changelog",
+    "description": "A simple php script to generate changelog via gitlab API v3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kostantinos Thermos"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"GitlabChangelog\\": "src"}
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
