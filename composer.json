@@ -1,5 +1,5 @@
 {
-    "name": "subdee/gitlab-changelog",
+    "name": "subdee/gitlab-chlog",
     "description": "A simple php script to generate changelog via gitlab API v3",
     "license": "MIT",
     "authors": [
