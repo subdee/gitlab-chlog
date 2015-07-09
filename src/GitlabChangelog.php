@@ -70,6 +70,9 @@ class GitlabChangelog
             $count = array_map(function ($issue) use ($repo) {
 
                 $labels = call_user_func($this->getLabels, $issue);
+                if (!$labels) {
+                    return false;
+                }
                 $labels = implode(', ', $labels);
                 $str = "- `$labels` [#$issue->id]";
                 $str .= "(" . $this->url . $repo->path_with_namespace . "/issues/" . $issue->id . ") ";
